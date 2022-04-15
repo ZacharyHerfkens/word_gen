@@ -1,7 +1,7 @@
 # Word Generator
 
-A word generator for conlangs. The aim of this generator is to be as simple as possible to do the basics, while still
-providing the tools to produce extremely complicated word shapes with a minimal amount of work.
+A word generator for conlangs, written in Python3. The aim of this generator is to be as simple as possible to do the basics, 
+while still providing the tools to produce extremely complicated word shapes with a minimal amount of work.
 
 ## Syntax
 
