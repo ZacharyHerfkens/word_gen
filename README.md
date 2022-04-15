@@ -4,7 +4,6 @@ A word generator for conlangs. The aim of this generator is to be as simple as p
 providing the tools to produce extremely complicated word shapes with a minimal amount of work.
 
 ## Syntax
----
 
 Here is an example file:
 ```
