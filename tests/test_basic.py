@@ -1,4 +1,6 @@
-import unittest
+import unittest, word_gen
 
 class BasicTests(unittest.TestCase):
-    pass
+    
+    def test_1(self):
+        pass

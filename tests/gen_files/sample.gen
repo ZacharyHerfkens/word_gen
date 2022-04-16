@@ -9,12 +9,12 @@
 %patterns {
     Mid: Cons Vowel Coda?;
 
-    # The start syllable can apear optionally without an Onset
+    // The start syllable can apear optionally without an Onset
     Start: Cons?90 Vowel Coda?;
 }
 
 %words {
-    # A Start syllable followed by zero to two Mid syllables
+    // A Start syllable followed by zero to two Mid syllables
     Start Mid{0..2};
 }
 
