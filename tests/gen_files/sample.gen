@@ -1,5 +1,3 @@
-%phonemes: a e i j k l m n o p s t u w;
-
 %classes {
     Cons: n m l s p t k w j;
     Vowel: a i e o u;
@@ -8,18 +6,16 @@
 
 %patterns {
     Mid: Cons Vowel Coda?;
-
-    // The start syllable can apear optionally without an Onset
     Start: Cons?90 Vowel Coda?;
 }
 
-%words {
-    // A Start syllable followed by zero to two Mid syllables
-    Start Mid{0..2};
+%replacements {
+    j |(i, e)| => (a, o, u);
+    w |(u, o)| => (a, i, e);
+    %any@cpy cpy{1..} => cpy;
+    (Cons Vowel)@CV CV{1..} => %reject;
 }
 
-%filters {
-    j <(i, e)> => (a, o, u);
-    w <(u, o)> => (a, i, e);
-    (Cons Vowel)@CV CV{1..};
+%words {
+    Start Mid{0..2};
 }

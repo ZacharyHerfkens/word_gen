@@ -21,6 +21,7 @@ Here is an example file:
 %replacements {
     j |(i, e)| => (a, o, u);
     w |(u, o)| => (a, i, e);
+    %any@cpy cpy{1..} => cpy;
     (Cons Vowel)@CV CV{1..} => %reject;
 }
 
